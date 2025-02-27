@@ -1,0 +1,634 @@
+/* General styling */
+body {
+    font-family: "Raleway-regular";
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  /* Video section styling */
+  .video-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px;
+  }
+  
+  .video-container {
+    flex-basis: 70%;
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-info {
+    flex-basis: 25%;
+  }
+  
+  .video-info h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .video-info p {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  
+  .social-sharing {
+    margin-top: 20px;
+  }
+  
+  .social-sharing a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #1877f2;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .social-sharing a:hover {
+    background-color: #0d6efd;
+  }
+
+  /* Comments section styling */
+  .comments-section {
+    margin: 40px;
+  }
+  
+  .comments-section h2 {
+    font-size: 24px;
+  }
+  
+  .comment-container {
+    margin-top: 20px;
+  }
+  
+  .comment {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .comment img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .comment-info h3 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  .comment-info p {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  
+  .comment-date {
+    font-size: 14px;
+    color: #666;
+    margin-left: auto;
+  }
+  
+
+
+  .social-sharing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .social-sharing a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #efefef;
+  }
+  
+  .social-sharing a i {
+    font-size: 20px;
+    color: #333;
+  }
+
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .btn{
+    padding:0.75rem 0.75rem;
+    border-radius: 4px;
+    
+    line-height: .8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition:all .3s ease;
+    border: 1px solid transparent;
+    
+    
+}
+
+.btn-primary{
+    background:var(--primary) ;
+    color: var(--heaven);
+}
+.btn-primary:hover{
+    background:var(--heaven) ;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.btn-secondary{
+    background:var(--secondary) ;
+    color: var(--heaven);
+}
+.btn-secondary:hover{
+    background:var(--heaven) ;
+    color: var(--secondary);
+    border: 1px solid var(--primary);
+}
+
+
+  .comment-form{
+    line-height: 2;
+    position: absolute;
+    margin-top: 13rem;
+  }
+  .comment-form label{
+    font-family: "Raleway-bold";
+
+  }
+  .comment-form input{
+    margin-left: 4rem;
+  }
+
+  .comment-form textarea{
+    margin-left: 2rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*fonts*/
+@font-face{
+    font-family: "Raleway-regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face{
+    font-family: "Raleway-medium";
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face{
+    font-family: "Raleway-bold";
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face{
+    font-family: "Raleway-semibold";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face{
+    font-family: "Raleway-black";
+    src: url(../fonts/Raleway-Black.ttf);
+}
+@font-face{
+    font-family: "Raleway-extrabold";
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+/* colors */
+:root{
+    --primary:#06A94D;
+    --secondary:#232B38;
+    --ternary:#6C6C6C;
+    --danger:#FE4545;
+    --pure:#FEFEFE;
+    --light:#F0F0F0;
+    --heaven:#FFFFFF;
+    --footer:#2D333F;
+}
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    -webkit-font-smoothing:antialiased;
+    /* height: 4000px; */
+}
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+
+header.topbar{
+    background-color: var(--secondary);
+    color: var(--pure);
+    font-family: "Raleway-semibold";
+    padding: .55rem 0;
+}
+
+header.topbar .auth > div a{
+    color: var(--pure);
+    text-decoration: none;
+}
+
+header.topbar .icons a{
+    margin-right: .6rem ;
+
+}
+header.topbar .auth .divider{
+    padding:0 1rem;
+}
+header.topbar .auth > div img{
+    margin-right: .35rem ;
+}
+/* utility classes */
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.section-heading{
+    font-family: "Raleway-bold";
+    text-align: center;
+    position: relative;
+    margin-bottom:4rem;
+
+}
+.section-heading:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image: url(../icons/hr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -40px;
+}
+nav .top{
+    padding: 1rem 0;
+}
+nav .top .contact h5, nav .top .time h5{
+    font-family: "Raleway-black";
+    margin-bottom : 0.25rem;
+}
+
+nav .top .contact h6, nav .top .time h6{
+    font-family: "Raleway-medium";
+    letter-spacing: 0.055rem;
+    font-size: 0.75rem;
+    color: var(--ternary);
+}
+nav .top .contact img, nav .top .time img{
+    margin-right: 1rem;
+}
+nav .navbar a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-family: "Raleway-semibold";
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    transition: all .3s ease;
+}
+#more {display: none;}
+
+nav .navbar a.team{
+    background:var(--primary);
+    color: var(--pure);
+}
+nav .navbar a:hover{
+    background: var(--primary);
+    color: var(--pure);
+}
+
+.magic-shadow{
+    position: relative;
+    background: var(--heaven);
+}
+.magic-shadow:after{
+    content:'';
+    display:block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../icons/shadow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -22px;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background: var(--footer);
+    padding: 4rem 0;
+}
+footer .container{
+    display: flex;
+    color: var(--pure);
+}
+
+footer .box{
+    flex:1;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+footer .box ul{
+    list-style-type: none;
+    
+
+}
+
+footer .box ul li a{
+    color: var(--pure);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease;
+   
+}
+
+footer .box ul li a:hover{
+    color: var(--pure)
+}
+
+footer .box h3{
+    border-bottom: 1px solid var(--primary);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+footer .box p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+footer .box ul li{
+    margin-bottom: 1rem;
+}
+
+footer .box:last-child > div {
+    display: flex;
+    justify-content: center;
+
+}
+footer .box:last-child{
+    text-align: left;
+}
+
+footer .box:last-child{
+    text-align: center;
+}
+
+footer .box:last-child img{
+    margin-right: 1rem;
+}

@@ -1,0 +1,618 @@
+/* General Styles */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+header, section {
+	padding: 20px;
+}
+
+h1, h2, p {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Header Styles */
+
+header {
+	background-color: #f1f1f1;
+	text-align: center;
+}
+.btn{
+  padding:0.65rem 0.55rem;
+  border-radius: 2px;
+  
+  line-height: .5;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:all .3s ease;
+  border: 1px solid transparent;
+  margin-top: 1rem;
+  
+  
+}
+.btn-primary{
+  background:var(--primary) ;
+  color: var(--heaven);
+}
+.btn-primary:hover{
+  background:var(--heaven) ;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-secondary{
+  background:var(--secondary) ;
+  color: var(--heaven);
+}
+.btn-secondary:hover{
+  background:var(--heaven) ;
+  color: var(--secondary);
+  border: 1px solid var(--primary);
+}
+
+header h1 {
+	margin-top: 0;
+}
+
+header.main img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+  margin-top: 10px;
+	margin-bottom: 10px;
+  box-shadow: 0 12px 12px  rgba(0, 0, 0, 0.5);
+}
+
+header p {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+/* Course Styles */
+
+section {
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+section li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+section li:last-child {
+	border-bottom: none;
+}
+
+section li p {
+	flex: 1;
+	margin-right: 10px;
+}
+
+.progress-bar {
+	width: 60%;
+	height: 10px;
+	background-color: #f1f1f1;
+	margin-right: 10px;
+}
+
+.progress {
+	height: 100%;
+	background-color: #4CAF50;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+	line-height: 10px;
+	border-radius: 5px;
+}
+
+
+
+
+
+.membership-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.membership-info h3 {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.membership-info .membership-type {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: gold;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  animation: fade-in 0.5s ease-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*fonts*/
+@font-face{
+  font-family: "Raleway-regular";
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face{
+  font-family: "Raleway-medium";
+  src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face{
+  font-family: "Raleway-bold";
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face{
+  font-family: "Raleway-semibold";
+  src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face{
+  font-family: "Raleway-black";
+  src: url(../fonts/Raleway-Black.ttf);
+}
+@font-face{
+  font-family: "Raleway-extrabold";
+  src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+/* colors */
+:root{
+  --primary:#06A94D;
+  --secondary:#232B38;
+  --ternary:#6C6C6C;
+  --danger:#FE4545;
+  --pure:#FEFEFE;
+  --light:#F0F0F0;
+  --heaven:#FFFFFF;
+  --footer:#2D333F;
+}
+/* Reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  -webkit-font-smoothing:antialiased;
+  /* height: 100px; */
+}
+.container{
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width:576px){
+  .container{
+      max-width: 540px;
+  }
+}
+@media (min-width:768px){
+  .container{
+      max-width: 720px;
+  }
+}
+@media (min-width:992px){
+  .container{
+      max-width: 960px;
+  }
+}
+@media (min-width:1200px){
+  .container{
+      max-width: 1152px;
+  }
+}
+
+header.topbar{
+  background-color: var(--secondary);
+  color: var(--pure);
+  font-family: "Raleway-semibold";
+  padding: .55rem 0;
+}
+
+header.topbar .auth > div a{
+  color: var(--pure);
+  text-decoration: none;
+}
+
+header.topbar .icons a{
+  margin-right: .6rem ;
+
+}
+header.topbar .auth .divider{
+  padding:0 1rem;
+}
+header.topbar .auth > div img{
+  margin-right: .35rem ;
+}
+/* utility classes */
+.flex{
+  display: flex;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.justify-center{
+  justify-content: center;
+}
+.items-center{
+  align-items: center;
+}
+.section-heading{
+  font-family: "Raleway-bold";
+  text-align: center;
+  position: relative;
+  margin-bottom:4rem;
+
+}
+.section-heading:after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-image: url(../icons/hr.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -40px;
+}
+nav .top{
+  padding: 1rem 0;
+}
+nav .top .contact h5, nav .top .time h5{
+  font-family: "Raleway-black";
+  margin-bottom : 0.25rem;
+}
+
+nav .top .contact h6, nav .top .time h6{
+  font-family: "Raleway-medium";
+  letter-spacing: 0.055rem;
+  font-size: 0.75rem;
+  color: var(--ternary);
+}
+nav .top .contact img, nav .top .time img{
+  margin-right: 1rem;
+}
+nav .navbar a{
+  text-decoration: none;
+  color: var(--secondary);
+  font-family: "Raleway-semibold";
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  transition: all .3s ease;
+}
+#more {display: none;}
+
+nav .navbar a.team{
+  background:var(--primary);
+  color: var(--pure);
+}
+nav .navbar a:hover{
+  background: var(--primary);
+  color: var(--pure);
+}
+
+.magic-shadow{
+  position: relative;
+  background: var(--heaven);
+}
+.magic-shadow:after{
+  content:'';
+  display:block;
+  width: 100%;
+  height: 69px;
+  background-image: url(../icons/shadow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -22px;
+  z-index: -1;
+}
+
+
+.certification-download {
+  background-color: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+  padding: 10px;
+  text-align: center;
+}
+
+.certification-download a {
+  background-color: #4CAF50;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.certification-download a:hover {
+  background-color: #3e8e41;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.certification-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.certification-image {
+  background-image: url("images/certificate-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.certification-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.certification-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.certification-info p {
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  background: var(--footer);
+  padding: 4rem 0;
+}
+footer .container{
+  display: flex;
+  color: var(--pure);
+}
+
+footer .box{
+  flex:1;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+footer .box ul{
+  list-style-type: none;
+  
+
+}
+
+footer .box ul li a{
+  color: var(--pure);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .3s ease;
+ 
+}
+
+footer .box ul li a:hover{
+  color: var(--pure)
+}
+
+footer .box h3{
+  border-bottom: 1px solid var(--primary);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  
+}
+
+footer .box p{
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+footer .box ul li{
+  margin-bottom: 1rem;
+}
+
+footer .box:last-child > div {
+  display: flex;
+  justify-content: center;
+
+}
+footer .box:last-child{
+  text-align: left;
+}
+
+footer .box:last-child{
+  text-align: center;
+}
+
+footer .box:last-child img{
+  margin-right: 1rem;
+}
